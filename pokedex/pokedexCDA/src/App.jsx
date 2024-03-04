@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import PresentationPokedex from './PresentationPokedex';
+import PokemonStarter from './PokemonStarter.jsx'
+import Card from './card.jsx'
+import Equipe from './equipe.jsx'
+function  App() {
+  const [searchTerm, setSearchTerm] = useState('');
+  
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return(
     <>
-    
+    <PresentationPokedex />
+    <Card />
+    <PokemonStarter />
+    <Equipe />
     </>
   )
 }
